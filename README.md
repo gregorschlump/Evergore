@@ -2,7 +2,7 @@
 
 Um die Skripte in Evergore nutzen zu können muss man sich das Addon Tampermonkey oder Greasemonkey im Browser installieren.
 
-
+"Evergore_Markt_show_all_Articles.user.js"
 Funktionalität Markt:
 
 - Anzeigen aller Einträge der Marktübersicht auf einer Seite. Filter sind weiterhin nutzbar.
