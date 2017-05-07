@@ -88,7 +88,7 @@
     }
 
     function changeLinksToOpenInNewTab(link){
-        var win = window.open("evergore.html?"+link, '_blank');
+        var win = window.open("evergore.html"+link, '_blank');
         if (win) {
             //Browser has allowed it to be opened
             win.focus();
