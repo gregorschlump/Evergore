@@ -4,13 +4,13 @@ Skriptsammlung für das Browsergame Evergore welche mit Tampermonkey oder Grease
 
 ## Wie Installieren?
 * Installiere das Plugin Tampermonkey oder Greasemonkey in deinem Browser 
-* Klicke im Githup repositorie auf das Skript welches du gerne nutzen möchtest. (Auch die Datei z.B. Evergore_Markt_show_all_Articles.user.js)
-* Klicke auf der sich nun geöffneten Seite den Button "Raw", nun öffnet sich euer Plugin mit einem Installationsscreen. Ihr werdet geefragt ob ihr dieses Skript wirklich benutzen wollt. Bestätigt durch ein Klick auf Installieren.
+* Klicke im Github repository auf das Skript welches du gerne nutzen möchtest. (Auf die Datei z.B. Evergore_Markt_show_all_Articles.user.js)
+* Klicke, auf der sich nun geöffneten Seite, den Button "Raw", nun öffnet sich euer Plugin mit einem Installationsscreen. Ihr werdet gefragt ob ihr dieses Skript wirklich benutzen wollt. Bestätigt durch ein Klick auf Installieren.
 * Nun ist das installierte Skript aktiv. 
 
 ## Wie Update ich ein Skript
 * Hast du das Skript wie oben beschrieben Installiert kannst du die automatische Update-Funktion nutzen. 
-* Klickt auf Euer Pluginsymol und in dem sich dort öffnenden Fenster auf "Skripte auf Update prüfen".
+* Klickt auf euer Pluginsymol und in dem sich dort öffnenden Fenster auf "Skripte auf Updates prüfen".
 * Ihr könnt die Installation wie oben beschrieben auch wiederholen, dabei werdet ihr gefragt ob ihr Updaten möchtet.
 
 ## Skripe deaktivieren oder löschen
@@ -19,7 +19,7 @@ Skriptsammlung für das Browsergame Evergore welche mit Tampermonkey oder Grease
 
 ## Skripe löschen
 * Klickt auf euer Pluginsymbol, und dort auf Übersicht (Dashbord)
-* In der sich öffnenden Übersicht könnt ihr unter Installierte Skripte euchre Skripte verwalten und löschen.
+* In der sich öffnenden Übersicht könnt ihr unter "Installierte Skripte" eure Skripte verwalten und löschen.
 
 
 ## Skripte mit Funktionsbeschreibung
@@ -31,7 +31,7 @@ Skript ist aktiv auf:
 Funktionalität Markt:
 - Anzeigen aller Einträge der Marktübersicht auf einer Seite. Filter sind weiterhin nutzbar.
 - Berechnung des Prozentualen Verkaufpreises, gemessen am Marktwert
-- Farbliche Kennzeichnung von Angeboten unter 50% (rot) und underter 53% (gelb)
+- Farbliche Kennzeichnung von Angeboten unter 50% (rot) und unter 53% (gelb)
 - Aus der Marktübersicht werden die Marktstände in einem neuen Tab geöffenet, anstatt im gleichen Fenster
 
 ### "Evergore_Protokoll_all_Eintraege.user.js"
@@ -41,4 +41,4 @@ Skript ist aktiv auf:
 
 Funktionen Gildenprotokoll und Stadtprotokoll:
 - Anzeigen aller Einträge des Protokolls auf einer Seite. Filter sind weiterhin nutzbar.
-- Berechnung der Gesammteinträge
+- Berechnung der Gesamteinträge
