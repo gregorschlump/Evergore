@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Evergore Markt all Articles
+// @name         Evergore market all articles
 // @namespace    http://tampermonkey.net/
 // @version      0.0.8
 // @description  kann alle Seiten am Markt laden
