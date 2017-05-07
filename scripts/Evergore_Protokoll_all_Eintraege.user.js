@@ -6,7 +6,7 @@
 // @author       Nojheim
 // @include        http://zyrthania.evergore.de/evergore.html?page=guild_protocol*
 // @include        http://zyrthania.evergore.de/evergore.html?page=town_protocol*
-// @include        http://zyrthania.evergore.de/evergore.html?page=market_protocol
+// @include        http://zyrthania.evergore.de/evergore.html?page=market_protocol*
 // @grant        none
 // ==/UserScript==
 
