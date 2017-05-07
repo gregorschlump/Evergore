@@ -4,7 +4,7 @@ Skriptsammlung für das Browsergame Evergore welche mit Tampermonkey oder Grease
 
 ## Wie Installieren?
 * Installiere das Plugin Tampermonkey oder Greasemonkey in deinem Browser 
-* Klicke im Github repository auf das Skript welches du gerne nutzen möchtest. (Auf die Datei z.B. Evergore_Markt_show_all_Articles.user.js)
+* Klicke im Github repository auf das Skript welches du gerne nutzen möchtest. (Auf die Datei z.B. EG_protocol_one_page.user.js)
 * Klicke, auf der sich nun geöffneten Seite, den Button "Raw", nun öffnet sich euer Plugin mit einem Installationsscreen. Ihr werdet gefragt ob ihr dieses Skript wirklich benutzen wollt. Bestätigt durch ein Klick auf Installieren.
 * Nun ist das installierte Skript aktiv. 
 
@@ -24,7 +24,7 @@ Skriptsammlung für das Browsergame Evergore welche mit Tampermonkey oder Grease
 
 ## Skripte mit Funktionsbeschreibung
 
-### "Evergore_Markt_show_all_Articles.user.js"
+### "EG_market_one_page.user.js"
 Skript ist aktiv auf:
 * http://zyrthania.evergore.de/evergore.html?page=market_all_articles*
 
@@ -34,7 +34,7 @@ Funktionalität Markt:
 - Farbliche Kennzeichnung von Angeboten unter 50% (rot) und unter 53% (gelb)
 - Aus der Marktübersicht werden die Marktstände in einem neuen Tab geöffenet, anstatt im gleichen Fenster
 
-### "Evergore_Protokoll_all_Eintraege.user.js"
+### "EG_protocol_one_page.user.js"
 Skript ist aktiv auf:
 * http://zyrthania.evergore.de/evergore.html?page=guild_protocol*
 * http://zyrthania.evergore.de/evergore.html?page=town_protocol*
