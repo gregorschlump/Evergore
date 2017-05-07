@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Evergore Protokoll all Eintraege
+// @name         EG_protocol_one_page
 // @namespace    http://tampermonkey.net/
 // @version      0.0.3
 // @description  Läd alle Einträge der Protokolle
