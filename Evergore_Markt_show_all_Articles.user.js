@@ -43,7 +43,6 @@
         var elementCount = table.getElementsByTagName("th")[0].innerHTML.match("Gesamt: ([\\d]*)")[1];
         var lastPageNumber = Math.ceil(elementCount/20);
         table.getElementsByTagName("th")[0].innerHTML = "(Gesamt: "+elementCount+" )";
-
         document.addEventListener('sizeChanged', function (e) {
             var mapSize=Object.keys(map).length;
             if(mapSize==lastPageNumber-1){
