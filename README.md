@@ -1,3 +1,3 @@
 # Evergore
 
-To use the script extension install Tampermonkey(Chrome) oder Greasemonkey(Firefox)
+Um die Skripte in Evergore nutzen zu können muss man sich das Addon Tampermonkey oder Greasemonkey im Browser installieren.
