@@ -38,6 +38,7 @@ Funktionalität Markt:
 Skript ist aktiv auf:
 * http://zyrthania.evergore.de/evergore.html?page=guild_protocol*
 * http://zyrthania.evergore.de/evergore.html?page=town_protocol*
+* http://zyrthania.evergore.de/evergore.html?page=market_protocol*
 
 Funktionen Gildenprotokoll und Stadtprotokoll:
 - Anzeigen aller Einträge des Protokolls auf einer Seite. Filter sind weiterhin nutzbar.
