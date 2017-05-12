@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Evergore market all articles
 // @namespace    http://tampermonkey.net/
-// @version      0.0.8
+// @version      0.0.9
 // @description  kann alle Seiten am Markt laden
 // @author       Nojheim &Tenzo
 // @match        http://zyrthania.evergore.de/evergore.html?page=market_all_articles*
@@ -78,9 +78,8 @@
                 }else if( fac < 54) {
                     newTd.style.backgroundColor = "yellow";
                 }
-                var link = allRows[k].getElementsByTagName("td")[0].getElementsByTagName("input")[0].getAttribute('onclick').match(/(\?[^']*)/gi);
                 allRows[k].getElementsByTagName("td")[0].getElementsByTagName("input")[0].onclick = function(){
-                    changeLinksToOpenInNewTab(link);
+                    changeLinksToOpenInNewTab(this.getAttribute('onclick').match(/(\?[^']*)/gi));
                 };
                 allRows[k].appendChild(newTd);
             }
