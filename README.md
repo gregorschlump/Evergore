@@ -43,3 +43,21 @@ Skript ist aktiv auf:
 Funktionen Gildenprotokoll und Stadtprotokoll:
 - Anzeigen aller Einträge des Protokolls auf einer Seite. Filter sind weiterhin nutzbar.
 - Berechnung der Gesamteinträge
+
+### "EG_message_one_page.user.js"
+Skript ist aktiv auf:
+* http://zyrthania.evergore.de/evergore.html?page=msg*
+
+Funktionen bei Nachrichten
+- Anzeigen aller Nachrichten bei Eingang, Ausgang und Papierkorp
+- Berechnung der Gesamteinträge
+- Nachrichten können in dieser Ansicht nicht gelöscht werden.
+
+### "EG_warehouse_one_page.user.js"
+Skript ist aktiv auf:
+* http://zyrthania.evergore.de/evergore.html?page=stock_out*
+
+Funktionen bei Nachrichten
+- Anzeigen aller Einträge des Lagers, Filter sind weiterhin aktiv
+- Berechnung der Gesamteinträge
+- Waren können in dieser Ansicht nicht aus dem Lager entnommen werden.
