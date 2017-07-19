@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Evergore market all articles
 // @namespace    http://tampermonkey.net/
-// @version      0.0.9
+// @version      0.0.10
 // @description  kann alle Seiten am Markt laden
 // @author       Nojheim &Tenzo
 // @match        http://zyrthania.evergore.de/evergore.html?page=market_all_articles*
