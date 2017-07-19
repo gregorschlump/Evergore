@@ -5,6 +5,7 @@
 // @description  Läd alle Nachrichten
 // @author       Nojheim
 // @include      http://zyrthania.evergore.de/evergore.html?page=msg*
+// @include      https://zyrthania.evergore.de/evergore.html?page=msg*
 // @grant        none
 // ==/UserScript==
 
