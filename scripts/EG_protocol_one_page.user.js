@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EG_protocol_one_page
 // @namespace    http://tampermonkey.net/
-// @version      0.0.3
+// @version      0.0.4
 // @description  Läd alle Einträge der Protokolle
 // @author       Nojheim
 // @include        http://zyrthania.evergore.de/evergore.html?page=guild_protocol*
