@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EG_message_one_page
 // @namespace    http://tampermonkey.net/
-// @version      0.0.1
+// @version      0.0.2
 // @description  Läd alle Nachrichten
 // @author       Nojheim
 // @include      http://zyrthania.evergore.de/evergore.html?page=msg*
