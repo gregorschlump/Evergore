@@ -5,6 +5,7 @@
 // @description  zeigt alle artikel des Lagers
 // @author       Nojheim
 // @include      http://zyrthania.evergore.de/evergore.html?page=stock_out*
+// @include      https://zyrthania.evergore.de/evergore.html?page=stock_out*
 // @grant        none
 // ==/UserScript==
 
