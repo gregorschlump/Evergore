@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EG_protocol_one_page
 // @namespace    http://tampermonkey.net/
-// @version      0.0.4
+// @version      0.0.5
 // @description  Läd alle Einträge der Protokolle
 // @author       Nojheim
 // @include        http://zyrthania.evergore.de/evergore.html?page=guild_protocol*
@@ -16,20 +16,15 @@
 (function() {
     'use strict';
 
-    function ready(f){
-        /in/.test(document.readyState) ? setTimeout('ready('+f+')',9) : f();
-    }
-
     var map = new Object();
     var mapSizeChanged = new Event('sizeChanged');
 
-    ready(function(){
-        if(window.location.href.search("&pos=")==-1){
-            if(document.getElementById('CONT_BODY').getElementsByTagName("table")[1].getElementsByTagName("th")[0].innerHTML.match("von ([\\d]*)")[1]>1){
-                addExpandLink();
-            }
-        }
-    });
+    if(window.location.href.search("&pos=")==-1){
+		if(document.getElementById('CONT_BODY').getElementsByTagName("table")[1].getElementsByTagName("th")[0].innerHTML.match("von ([\\d]*)")[1]>1){
+			addExpandLink();
+		}
+	}
+    
 
     function addExpandLink(){
         var a = document.createElement('a');

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Evergore market all articles
 // @namespace    http://tampermonkey.net/
-// @version      0.0.10
+// @version      0.0.11
 // @description  kann alle Seiten am Markt laden
 // @author       Nojheim &Tenzo
 // @match        http://zyrthania.evergore.de/evergore.html?page=market_all_articles*
@@ -12,21 +12,17 @@
 (function() {
     'use strict';
 
-    function ready(f){
-        /in/.test(document.readyState) ? setTimeout('ready('+f+')',9) : f();
-    }
-
     var map = new Object();
     var mapSizeChanged = new Event('sizeChanged');
     var table;
 
-    ready(function(){
-        if(window.location.href.search("&pos=")==-1){
-            table = document.getElementById('CONT_BODY').getElementsByTagName("table")[2];
-            changeWholeTable();
-            addExpandLink();
-        }
-    });
+    
+	if(window.location.href.search("&pos=")==-1){
+		table = document.getElementById('CONT_BODY').getElementsByTagName("table")[2];
+		changeWholeTable();
+		addExpandLink();
+	}
+
 
     function addExpandLink(){
         var a = document.createElement('a');

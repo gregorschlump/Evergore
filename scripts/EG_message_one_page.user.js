@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EG_message_one_page
 // @namespace    http://tampermonkey.net/
-// @version      0.0.2
+// @version      0.0.3
 // @description  Läd alle Nachrichten
 // @author       Nojheim
 // @include      http://zyrthania.evergore.de/evergore.html?page=msg*
@@ -12,23 +12,18 @@
 (function() {
     'use strict';
 
-    function ready(f){
-        /in/.test(document.readyState) ? setTimeout('ready('+f+')',9) : f();
-    }
-
     var map = new Object();
     var mapSizeChanged = new Event('sizeChanged');
     var table;
 
-    ready(function(){
-        if(window.location.href.search("&pos=")==-1 && window.location.href.search("&msg_id")==-1){
-            table = document.getElementById('CONT_BODY').getElementsByTagName("form")[0].getElementsByTagName("table")[0];
-            if( table.getElementsByTagName("th")[1].innerHTML.match("Gesamt: ([\\d]*)")[1]>20 ){
-                addExpandLink();
-            }
-        } 
-    });
-
+    
+	if(window.location.href.search("&pos=")==-1 && window.location.href.search("&msg_id")==-1){
+		table = document.getElementById('CONT_BODY').getElementsByTagName("form")[0].getElementsByTagName("table")[0];
+		if( table.getElementsByTagName("th")[1].innerHTML.match("Gesamt: ([\\d]*)")[1]>20 ){
+			addExpandLink();
+		}
+	} 
+    
     function addExpandLink(){
         var a = document.createElement('a');
         var linkText = document.createTextNode("alle Seiten laden");

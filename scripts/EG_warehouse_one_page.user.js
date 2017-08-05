@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Evergore Lager all Articles
 // @namespace    http://tampermonkey.net/
-// @version      0.0.2
+// @version      0.0.3
 // @description  zeigt alle artikel des Lagers
 // @author       Nojheim
 // @include      http://zyrthania.evergore.de/evergore.html?page=stock_out*
@@ -12,22 +12,18 @@
 (function() {
     'use strict';
 
-    function ready(f){
-        /in/.test(document.readyState) ? setTimeout('ready('+f+')',9) : f();
-    }
-
     var map = new Object();
     var mapSizeChanged = new Event('sizeChanged');
     var table;
 
-    ready(function(){
-        if(window.location.href.search("&pos=")==-1 && window.location.href.search("stock_out_search")==-1){
-                table = document.getElementById('CONT_BODY').getElementsByTagName("form")[0].getElementsByTagName("table")[0];
-            if(table.getElementsByTagName("th")[1].innerHTML.match("Gesamt: ([\\d]*)")[1]>20){
-                addExpandLink();
-            }
-        }
-    });
+    
+	if(window.location.href.search("&pos=")==-1 && window.location.href.search("stock_out_search")==-1){
+			table = document.getElementById('CONT_BODY').getElementsByTagName("form")[0].getElementsByTagName("table")[0];
+		if(table.getElementsByTagName("th")[1].innerHTML.match("Gesamt: ([\\d]*)")[1]>20){
+			addExpandLink();
+		}
+	}
+    
 
     function addExpandLink(){
         var a = document.createElement('a');
