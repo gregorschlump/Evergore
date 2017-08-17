@@ -63,14 +63,13 @@
 
     function addDatalistToPage() {
         console.log("addDatalistToPage");
-        document.getElementsByClassName("awesomplete")[0].append(list);
-        //focus on input field
-        document.getElementsByClassName("awesomplete")[0].focus();
+        document.getElementById("awesomplete").append(list);
 
         new Awesomplete(input, {list: document.querySelector("#nameList"),
                                 minChars: 3,
                                 maxItems: 15, });
-        console.log("new Awesomplete");
+        //focus on input field
+       document.getElementById("awesomplete").focus();
 
 
     }
@@ -100,7 +99,7 @@
                 console.log("wlenght: "+unique.length);
                 console.log("SMlenght: "+storageMap.length);
                // var now = new Date().getTime().toString();
-                localStorage.setItem("EGNames", JSON.stringify(storageMap));
+                localStorage.setItem("EGNames", JSON.stringify(unique));
                 addAutocompleteBehavior();
             }
         } , false);
