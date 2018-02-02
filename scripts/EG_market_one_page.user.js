@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Evergore market all articles
 // @namespace    http://tampermonkey.net/
-// @version      0.0.11
+// @version      0.0.12
 // @description  kann alle Seiten am Markt laden
 // @author       Nojheim &Tenzo
 // @match        http://zyrthania.evergore.de/evergore.html?page=market_all_articles*
@@ -120,6 +120,7 @@
             }
         };
         xmlhttp.open("GET", theURL, true);
+    	xmlhttp.overrideMimeType('text/xml; charset=iso-8859-1');
         xmlhttp.send();
     }
 })();
