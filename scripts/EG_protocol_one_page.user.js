@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EG_protocol_one_page
 // @namespace    http://tampermonkey.net/
-// @version      0.0.5
+// @version      0.0.6
 // @description  Läd alle Einträge der Protokolle
 // @author       Nojheim
 // @include        http://zyrthania.evergore.de/evergore.html?page=guild_protocol*
@@ -83,6 +83,7 @@
             }
         };
         xmlhttp.open("GET", theURL, true);
+	xmlhttp.overrideMimeType('text/xml; charset=iso-8859-1');
         xmlhttp.send();
     }
 })();
