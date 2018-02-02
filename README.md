@@ -26,7 +26,7 @@ Skriptsammlung für das Browsergame Evergore welche mit Tampermonkey oder Grease
 
 ### "EG_market_one_page.user.js"
 Skript ist aktiv auf:
-* http://zyrthania.evergore.de/evergore.html?page=market_all_articles*
+* https://zyrthania.evergore.de/evergore.html?page=market_all_articles*
 
 Funktionalität Markt:
 - Anzeigen aller Einträge der Marktübersicht auf einer Seite. Filter sind weiterhin nutzbar.
@@ -36,9 +36,9 @@ Funktionalität Markt:
 
 ### "EG_protocol_one_page.user.js"
 Skript ist aktiv auf:
-* http://zyrthania.evergore.de/evergore.html?page=guild_protocol*
-* http://zyrthania.evergore.de/evergore.html?page=town_protocol*
-* http://zyrthania.evergore.de/evergore.html?page=market_protocol*
+* https://zyrthania.evergore.de/evergore.html?page=guild_protocol*
+* https://zyrthania.evergore.de/evergore.html?page=town_protocol*
+* https://zyrthania.evergore.de/evergore.html?page=market_protocol*
 
 Funktionen Gildenprotokoll und Stadtprotokoll:
 - Anzeigen aller Einträge des Protokolls auf einer Seite. Filter sind weiterhin nutzbar.
@@ -46,7 +46,7 @@ Funktionen Gildenprotokoll und Stadtprotokoll:
 
 ### "EG_message_one_page.user.js"
 Skript ist aktiv auf:
-* http://zyrthania.evergore.de/evergore.html?page=msg*
+* https://zyrthania.evergore.de/evergore.html?page=msg*
 
 Funktionen bei Nachrichten
 - Anzeigen aller Nachrichten bei Eingang, Ausgang und Papierkorp
@@ -55,9 +55,17 @@ Funktionen bei Nachrichten
 
 ### "EG_warehouse_one_page.user.js"
 Skript ist aktiv auf:
-* http://zyrthania.evergore.de/evergore.html?page=stock_out*
+* https://zyrthania.evergore.de/evergore.html?page=stock_out*
 
-Funktionen bei Nachrichten
+Funktionen im Lager 
 - Anzeigen aller Einträge des Lagers, Filter sind weiterhin aktiv
 - Berechnung der Gesamteinträge
 - Waren können in dieser Ansicht nicht aus dem Lager entnommen werden.
+
+### "EG_autocomplete_names.user.js"
+Skript ist aktiv auf:
+* https://zyrthania.evergore.de/evergore.html?page=msg_new*
+* https://zyrthania.evergore.de/evergore.html?page=retail_new*
+
+Funktionen bei Nachrichten und Tauschhandel
+- Das Namensfeld hat eine Vorschlagsliste mit Spielernamen welche nach 3 Buchstaben erscheint
