@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Evergore Lager all Articles
 // @namespace    http://tampermonkey.net/
-// @version      0.0.3
+// @version      0.0.4
 // @description  zeigt alle artikel des Lagers
 // @author       Nojheim
 // @include      http://zyrthania.evergore.de/evergore.html?page=stock_out*
@@ -92,6 +92,7 @@
             }
         };
         xmlhttp.open("GET", theURL, true);
+    	xmlhttp.overrideMimeType('text/xml; charset=iso-8859-1');
         xmlhttp.send();
     }
 })();
