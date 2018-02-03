@@ -24,23 +24,36 @@
     //Setup globals
     var map = [];
     var mapSizeChanged = new Event('sizeChanged');
-    var awesomeplete;
+    //var awesomeplete;
     //Datalist structure
     var list = document.createElement("DATALIST");
     list.setAttribute("id", "nameList");
 
-    //Check for cached Data
+    //Check for cached Data and update if necessary
     if (localStorage.getItem("EGNames") === null) {
         populateLocalstorage();
     } else {
+        updateNameList();
         addAutocompleteBehavior();
     }
 
+    //Checks if Data is older than 1 week and updates.
+    function updateNameList() {
+        var today = new Date();
+        var changeDate = new Date(JSON.parse(localStorage.getItem("EGNamesUpdateDate")));
+        changeDate.setDate(changeDate.getDate() + 7);
+        if (today.getMonth() !== changeDate.getMonth() || today.getDate() > changeDate.getDate()) {
+            populateLocalstorage();
+            console.log("Daten veraltet. Neu Laden");
+        }
+    }
+
+    //Adds behavior to textboxes
     function addAutocompleteBehavior() {
         console.log("addAutocompleteBehavior");
         var inputfield;
 
-        if (document.getElementsByName('recipient')[0] == null) {
+        if (document.getElementsByName('recipient')[0] === null) {
             inputfield = "target";
         } else {
             inputfield = "recipient";
@@ -66,10 +79,10 @@
         document.getElementById("awesomplete").append(list);
 
         new Awesomplete(input, {list: document.querySelector("#nameList"),
-                                minChars: 3,
-                                maxItems: 15, });
+            minChars: 3,
+            maxItems: 15 });
         //focus on input field
-       document.getElementById("awesomplete").focus();
+        document.getElementById("awesomplete").focus();
 
 
     }
@@ -81,7 +94,7 @@
         var lastPageNumber = Math.ceil(elementCount / 20);
 
         //event is fired as soon 'loadXMLDoc()' finishes loading a website
-        document.addEventListener('sizeChanged', function (e) {
+        document.addEventListener('sizeChanged', function () {
             var mapSize = Object.keys(map).length;
             var storageMap = [];
             if (mapSize === (lastPageNumber - 1)) {
@@ -98,8 +111,9 @@
             {
                 console.log("wlenght: "+unique.length);
                 console.log("SMlenght: "+storageMap.length);
-               // var now = new Date().getTime().toString();
+                // var now = new Date().getTime().toString();
                 localStorage.setItem("EGNames", JSON.stringify(unique));
+                localStorage.setItem("EGNamesUpdateDate", JSON.stringify(new Date()));
                 addAutocompleteBehavior();
             }
         } , false);
