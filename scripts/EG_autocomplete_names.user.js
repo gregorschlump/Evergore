@@ -1,15 +1,16 @@
 // ==UserScript==
 // @name         EG_autocomplete_message_LS
 // @namespace    http://tampermonkey.net/
-// @version      0.0.4
+// @version      0.0.6
 // @description  Autovervollstaendigung
 // @author       Tenzo & Nojheim
 // @require      http://www.versi.info/EG/awesomecomplete/awesomplete.min.js
 // @resource     awesomeCSS http://www.versi.info/EG/awesomecomplete/awesomplete.css
 // @include      https://zyrthania.evergore.de/evergore.html?page=msg_new*
 // @include      https://zyrthania.evergore.de/evergore.html?page=retail_new*
+// @include      https://zyrthania.evergore.de/evergore.html?page=settings_account
 // @grant        GM_addStyle
-// @grant       GM_getResourceText
+// @grant        GM_getResourceText
 // ==/UserScript==
 
 (function () {
@@ -30,7 +31,7 @@
     list.setAttribute("id", "nameList");
 
     //Check for cached Data and update if necessary
-    if (localStorage.getItem("EGNames") === null) {
+    if (localStorage.getItem("EGNames") === null || localStorage.getItem("EGNamesUpdateDate") === null) {
         populateLocalstorage();
     } else {
         updateNameList();
@@ -53,10 +54,17 @@
         console.log("addAutocompleteBehavior");
         var inputfield;
 
-        if (document.getElementsByName('recipient')[0] === null) {
-            inputfield = "target";
-        } else {
+        //Add to input field on "new message"
+        if (document.getElementsByName('recipient')[0] != null) {
             inputfield = "recipient";
+        }
+        //Add to input field on "transaction"
+        else if(document.getElementsByName('target')[0] != null){
+            inputfield = "target";
+        }
+        //Add on "option page"
+        else {
+            inputfield = "name";
         }
 
         document.getElementsByName(inputfield)[0].setAttribute("id", "awesomplete");
