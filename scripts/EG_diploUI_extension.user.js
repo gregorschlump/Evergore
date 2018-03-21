@@ -20,7 +20,7 @@
     //Get Table
     table = document.getElementById('CONT_BODY');
     var len = table.getElementsByTagName("table").length;
-    console("Anzahl Tabellen: " + len);
+    console.log("Anzahl Tabellen: " + len);
 
 
 })();
