@@ -69,3 +69,6 @@ Skript ist aktiv auf:
 
 Funktionen bei Nachrichten und Tauschhandel
 - Das Namensfeld hat eine Vorschlagsliste mit Spielernamen welche nach 3 Buchstaben erscheint
+
+
+©CC BY-SA 3.0
