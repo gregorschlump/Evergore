@@ -70,11 +70,11 @@
                 newTd.className = "Factor";
                 var fac = Math.round(10000.0*(values[0]/values[1]))/100;
                 newTd.innerHTML = fac;
-                if( fac < 50) {
+          /*      if( fac < 50) {
                     newTd.style.backgroundColor = "red";
                 }else if( fac < 54) {
                     newTd.style.backgroundColor = "yellow";
-                }
+                }*/
                 allRows[k].getElementsByTagName("td")[0].getElementsByTagName("input")[0].onclick = function(){
                     changeLinksToOpenInNewTab(this.getAttribute('onclick').match(/(\?[^']*)/gi));
                 };
