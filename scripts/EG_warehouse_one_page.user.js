@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Evergore Lager all Articles
+// @name         EG_warehouse_one_page
 // @namespace    http://tampermonkey.net/
-// @version      0.0.4
+// @version      0.0.5
 // @description  zeigt alle artikel des Lagers
 // @author       Nojheim
 // @include      http://zyrthania.evergore.de/evergore.html?page=stock_out*
