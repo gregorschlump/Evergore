@@ -1,6 +1,12 @@
 // ==UserScript==
-// @name        _Cross browser notifications
+// @name        EG_notification_service_LS
+// @namespace   http://tampermonkey.net/
+// @version     0.0.1
+// @description Autovervollstaendigung
+// @author      Tenzo
 // @match       https://zyrthania.evergore.de/evergore.html*
+// @match       https://endurias.evergore.de/evergore.html*
+// @match       https://dunladan.evergore.de/evergore.html*
 // @grant       GM_notification
 // @grant       window.focus
 // @grant       GM_xmlhttpRequest
@@ -22,6 +28,24 @@ var notificationDetails = {
 //GM_notification (notificationDetails);
 (function () {
     //     setInterval(shim_GM_notification(), 1000);
+    var url
+    var ssName;
+
+    //current location
+    var localSite = window.location.host;
+    if (localSite.includes("zyrthania"))
+    {
+        ssName = "EGNotificationZyr";
+        url = "https://zyrthania.evergore.de/evergore.html?page=ranking_hero&pos=";
+    } else  if (localSite.includes("endurias"))
+    {
+        ssName = "EGNotificationEndu";
+        url = "https://endurias.evergore.de/evergore.html?page=ranking_hero&pos=";
+    } else  if (localSite.includes("dunladan"))
+    {
+        ssName = "EGNotificationDun";
+        url = "https://dunladan.evergore.de/evergore.html?page=ranking_hero&pos=";
+    }
 
     interval(function(){
         console.log("Hallo")
@@ -33,7 +57,6 @@ var notificationDetails = {
 
     function parseJSON(){
         var xmlhttp = new XMLHttpRequest();
-        var url = "https://zyrthania.evergore.de/system.html?action=notify_msg_duel";
 
         xmlhttp.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
