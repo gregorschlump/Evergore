@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Evergore market all articles
+// @name         EG_market_one_page
 // @namespace    http://tampermonkey.net/
-// @version      0.0.12
+// @version      0.0.13
 // @description  kann alle Seiten am Markt laden
-// @author       Nojheim &Tenzo
+// @author       Nojheim & Tenzo
 // @match        http://zyrthania.evergore.de/evergore.html?page=market_all_articles*
 // @match        https://zyrthania.evergore.de/evergore.html?page=market_all_articles*
 // @grant        none
@@ -70,11 +70,11 @@
                 newTd.className = "Factor";
                 var fac = Math.round(10000.0*(values[0]/values[1]))/100;
                 newTd.innerHTML = fac;
-                if( fac < 50) {
+          /*      if( fac < 50) {
                     newTd.style.backgroundColor = "red";
                 }else if( fac < 54) {
                     newTd.style.backgroundColor = "yellow";
-                }
+                }*/
                 allRows[k].getElementsByTagName("td")[0].getElementsByTagName("input")[0].onclick = function(){
                     changeLinksToOpenInNewTab(this.getAttribute('onclick').match(/(\?[^']*)/gi));
                 };

@@ -69,3 +69,11 @@ Skript ist aktiv auf:
 
 Funktionen bei Nachrichten und Tauschhandel
 - Das Namensfeld hat eine Vorschlagsliste mit Spielernamen welche nach 3 Buchstaben erscheint
+
+### "EG_battle_report_enchanced.user.js"
+Skript ist aktiv auf:
+* https://zyrthania.evergore.de/evergore.html?page=battle_report*
+
+Funktionen bei Kampfberichte
+- Vergrößert den Kampfkarte um 50%
+- Highlights werden auch fett hervorgehoben, an denen der Markierte keine Aktion selbst ausführt
