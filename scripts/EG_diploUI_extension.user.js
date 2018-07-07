@@ -22,5 +22,7 @@
     var len = table.getElementsByTagName("table").length;
     console.log("Anzahl Tabellen: " + len);
 
+    var test =  table.getElementsByTagName("table")[1].getElementsByTagName("tbody")[0].getElementsByTagName("tr")[0].getElementsByTagName("th")[0].innerHTML;
+    console.log("Inhalt: " + test);
 
 })();
