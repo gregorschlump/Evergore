@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EG_message_one_page
 // @namespace    http://tampermonkey.net/
-// @version      0.0.4
+// @version      0.0.5
 // @description  Läd alle Nachrichten
 // @author       Nojheim
 // @include      http://zyrthania.evergore.de/evergore.html?page=msg*
@@ -85,7 +85,7 @@
             }
         };
         xmlhttp.open("GET", theURL, true);
-	xmlhttp.overrideMimeType('text/xml; charset=iso-8859-1');
+	xmlhttp.overrideMimeType('text/xml; charset=utf-8');
         xmlhttp.send();
     }
 })();
