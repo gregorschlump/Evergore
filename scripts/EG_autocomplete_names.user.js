@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EG_autocomplete_message_LS
 // @namespace    http://tampermonkey.net/
-// @version      0.0.7
+// @version      0.0.8
 // @description  Autovervollstaendigung
 // @author       Tenzo & Nojheim
 // @require      http://www.versi.info/EG/awesomecomplete/awesomplete.min.js
@@ -179,7 +179,7 @@
             }
         };
         xmlhttp.open("GET", theURL, true);
-        xmlhttp.overrideMimeType('text/xml; charset=iso-8859-1');
+        xmlhttp.overrideMimeType('text/xml; charset=utf-8');
         xmlhttp.send();
     }
 })();
