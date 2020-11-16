@@ -4,12 +4,18 @@
 // @version      0.0.7
 // @description  Läd alle Einträge der Protokolle
 // @author       Nojheim
-// @include        http://zyrthania.evergore.de/evergore.html?page=guild_protocol*
-// @include        http://zyrthania.evergore.de/evergore.html?page=town_protocol*
-// @include        http://zyrthania.evergore.de/evergore.html?page=market_protocol*
-// @include        https://zyrthania.evergore.de/evergore.html?page=guild_protocol*
-// @include        https://zyrthania.evergore.de/evergore.html?page=town_protocol*
-// @include        https://zyrthania.evergore.de/evergore.html?page=market_protocol*
+// @include        https://evergore.de/dunladan?page=guild_protocol*
+// @include        https://evergore.de/dunladan?page=town_protocol*
+// @include        https://evergore.de/dunladan?page=market_protocol*
+// @include        https://evergore.de/endurias?page=guild_protocol*
+// @include        https://evergore.de/endurias?page=town_protocol*
+// @include        https://evergore.de/endurias?page=market_protocol*
+// @include        https://evergore.de/zyrthania?page=guild_protocol*
+// @include        https://evergore.de/zyrthania?page=town_protocol*
+// @include        https://evergore.de/zyrthania?page=market_protocol*
+// @include        https://evergore.de/ikandur?page=guild_protocol*
+// @include        https://evergore.de/ikandur?page=town_protocol*
+// @include        https://evergore.de/ikandur?page=market_protocol*
 // @grant        none
 // ==/UserScript==
 
