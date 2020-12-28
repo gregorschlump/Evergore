@@ -4,8 +4,10 @@
 // @version      0.0.1
 // @description  UI verbesserung fuer das Diplo-Menu
 // @author       Tenzo & Nojheim
-// @include      https://zyrthania.evergore.de/evergore.html?page=diplomacy
-// @include      http://zyrthania.evergore.de/evergore.html?page=diplomacy
+// @include      https://evergore.de/ikandur?page=diplomacy
+// @include      https://evergore.de/zyrthania?page=diplomacy
+// @include      https://evergore.de/enduris?page=diplomacy
+// @include      https://evergore.de/dunladan?page=diplomacy
 // @grant        GM_addStyle
 // @grant        GM_getResourceText
 // ==/UserScript==
