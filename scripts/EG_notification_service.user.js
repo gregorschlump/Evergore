@@ -45,7 +45,7 @@ var notificationDetails = {
     } else  if (localSite.includes("dunladan"))
     {
         ssName = "EGNotificationDun";
-        url = "https://dunladan.evergore.de/evergore.html?page=ranking_hero&pos=";
+        url = "https://evergore.de/dunladan?page=ranking_hero&pos=";
     }
 
     interval(function(){
