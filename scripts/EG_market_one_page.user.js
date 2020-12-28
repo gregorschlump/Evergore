@@ -4,8 +4,10 @@
 // @version      0.0.14
 // @description  kann alle Seiten am Markt laden
 // @author       Nojheim & Tenzo
-// @match        http://zyrthania.evergore.de/evergore.html?page=market_all_articles*
-// @match        https://zyrthania.evergore.de/evergore.html?page=market_all_articles*
+// @match        https://evergore.de/ikandur?page=market_all_articles*
+// @match        https://evergore.de/zyrthania?page=market_all_articles*
+// @match        https://evergore.de/endurias?page=market_all_articles*
+// @match        https://evergore.de/dunladan?page=market_all_articles*
 // @grant        none
 // ==/UserScript==
 
