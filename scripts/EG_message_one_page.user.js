@@ -4,8 +4,10 @@
 // @version      0.0.5
 // @description  Läd alle Nachrichten
 // @author       Nojheim
-// @include      http://zyrthania.evergore.de/evergore.html?page=msg*
-// @include      https://zyrthania.evergore.de/evergore.html?page=msg*
+// @include      https://evergore.de/ikandur?page=msg*
+// @include      https://evergore.de/zyrthania?page=msg
+// @include      https://evergore.de/endurias?page=msg
+// @include      https://evergore.de/dunladan?page=msg
 // @grant        none
 // ==/UserScript==
 
