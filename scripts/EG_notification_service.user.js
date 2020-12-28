@@ -4,9 +4,10 @@
 // @version     0.0.1
 // @description Autovervollstaendigung
 // @author      Tenzo
-// @match       https://zyrthania.evergore.de/evergore.html*
-// @match       https://endurias.evergore.de/evergore.html*
-// @match       https://dunladan.evergore.de/evergore.html*
+// @match       https://evergore.de/ikandur*
+// @match       https://evergore.de/zyrthania*
+// @match       https://evergore.de/endurias*
+// @match       https://evergore.de/dunladan*
 // @grant       GM_notification
 // @grant       window.focus
 // @grant       GM_xmlhttpRequest
