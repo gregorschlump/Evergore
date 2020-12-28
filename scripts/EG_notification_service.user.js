@@ -33,19 +33,23 @@ var notificationDetails = {
     var ssName;
 
     //current location
-    var localSite = window.location.host;
-    if (localSite.includes("zyrthania"))
+    var localSite = window.location.href;
+    if (localSite.includes("ikandur"))
+        
+    } else if (localSite.includes("ikandur"))
+                ssName = "EGNotificationIka";
+        url = "https://evergore.de/ikandur?page=ranking_hero&pos=";
     {
         ssName = "EGNotificationZyr";
-        url = "https://zyrthania.evergore.de/evergore.html?page=ranking_hero&pos=";
+        url = "https://evergore.de/zyrthania?page=ranking_hero&pos=";
     } else  if (localSite.includes("endurias"))
     {
         ssName = "EGNotificationEndu";
-        url = "https://endurias.evergore.de/evergore.html?page=ranking_hero&pos=";
+        url = "https://evergore.de/endurias?page=ranking_hero&pos=";
     } else  if (localSite.includes("dunladan"))
     {
         ssName = "EGNotificationDun";
-        url = "https://evergore.de/dunladan?page=ranking_hero&pos=";
+        url = "https://evergore.de/dunladan?page=ranking_hero&pos=*";
     }
 
     interval(function(){
