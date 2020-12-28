@@ -4,8 +4,10 @@
 // @version      0.0.6
 // @description  zeigt alle artikel des Lagers
 // @author       Nojheim
-// @include      http://zyrthania.evergore.de/evergore.html?page=stock_out*
-// @include      https://zyrthania.evergore.de/evergore.html?page=stock_out*
+// @include      https://evergore.de/ikandur?page=stock_out*
+// @include      https://evergore.de/zyrthania?page=stock_out*
+// @include      https://evergore.de/endurias?page=stock_out*
+// @include      https://evergore.de/dunladan?page=stock_out*
 // @grant        none
 // ==/UserScript==
 
