@@ -33,7 +33,7 @@ var notificationDetails = {
     var ssName;
 
     //current location
-    var localSite = window.location.hostname;
+    var localSite = window.location.href;
     if (localSite.includes("ikandur"))
         
     } else if (localSite.includes("ikandur"))
@@ -49,7 +49,7 @@ var notificationDetails = {
     } else  if (localSite.includes("dunladan"))
     {
         ssName = "EGNotificationDun";
-        url = "https://evergore.de/dunladan?page=ranking_hero&pos=*";
+        url = "https://evergore.de/dunladan?page=ranking_hero&pos=";
     }
 
     interval(function(){
