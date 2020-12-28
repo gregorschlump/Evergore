@@ -33,7 +33,7 @@ var notificationDetails = {
     var ssName;
 
     //current location
-    var localSite = window.location.href;
+    var localSite = window.location.hostname;
     if (localSite.includes("ikandur"))
         
     } else if (localSite.includes("ikandur"))
