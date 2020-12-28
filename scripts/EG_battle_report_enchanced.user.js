@@ -4,7 +4,10 @@
 // @version      0.0.1
 // @description  Verbessertes Kampfbericht
 // @author       Bergi
-// @include      https://zyrthania.evergore.de/evergore.html?page=battle_report*
+// @include      https://evergore.de/ikandur?page=battle_report*
+// @include      https://evergore.de/zyrthania?page=battle_report*
+// @include      https://evergore.de/endurias?page=battle_report*
+// @include      https://evergore.de/dunladan?page=battle_report*
 // @grant        none
 // ==/UserScript==
 
